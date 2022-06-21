@@ -11,7 +11,7 @@ import axios from 'axios';
 
 axios.interceptors.request.use((request=>{
   let apiUrl = request.url;
-  request.url = `https://ecommerce-backend-christian.herokuapp.com${apiUrl}`;
+  request.url = `https://e-soko-backend.herokuapp.com/${apiUrl}`;
   return request;
 }))
 
